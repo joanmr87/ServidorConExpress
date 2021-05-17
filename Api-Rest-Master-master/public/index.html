@@ -13,14 +13,12 @@
         <div class="panel panel-default">
             <div class="panel-heading">Lista Usuarios</div>
             <div class="panel-body">
-                <div>Nombre: Astor - Edad: 10
-                    <button class="btn btn-danger pull-right">Eliminar</button>
-                </div>    
+                           
             </div>
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">Crear Usuario</div>
-            <div class="panel-body">
+            <div class="panel-body" id="contentTable">
                 <form>
                     <div class="form-group">
                         <label>Nombre</label>
@@ -36,6 +34,16 @@
             </div>
           </div>
     </div>
+    
+    <template id="contentRow">
+        <div class="row">
+            <div class="col-xs-6">Nombre</div>
+            <div class="col-xs-2">Edad</div>
+            <div class="col-xs-4">
+                <button class="btn btn-danger pull-right">Eliminar</button>   
+            </div>
+        </div>         
+    </template>
     
 </body>
 </html> 
