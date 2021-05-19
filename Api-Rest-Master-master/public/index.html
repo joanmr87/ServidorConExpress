@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Usuarios</h1>
-        <div class="panel panel-default">
-            <div class="panel-heading">Lista Usuarios</div>
-            <div class="panel-body">
-                           
+      <h1>Usuarios</h1>
+      <div class="panel panel-default">
+        <div class="panel-heading">Lista Usuarios</div>
+        <div class="panel-body" id="contentTable"></div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Crear Usuario</div>
+        <div class="panel-body" >
+          <form>
+            <div class="form-group">
+              <label>Nombre</label>
+              <input class="form-control" type="text" placeholder="Nombre" />
             </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">Crear Usuario</div>
-            <div class="panel-body" id="contentTable">
-                <form>
-                    <div class="form-group">
-                        <label>Nombre</label>
-                        <input class="form-control" type="text" placeholder="Nombre"> 
-                    </div>
-                    <div class="form-group">
-                        <label>Edad</label>
-                        <input class="form-control" type="number" placeholder="Edad"> 
-                    </div>
-                    <button type="submit" class="btn btn-success">Crear</button>
-                </form>
-                    
+            <div class="form-group">
+              <label>Edad</label>
+              <input class="form-control" type="number" placeholder="Edad" />
             </div>
-          </div>
+
+            <button type="submit" class="btn btn-success">Crear</button>
+          </form>
+        </div>
+      </div>
     </div>
-    
+
     <template id="contentRow">
-        <div class="row">
-            <div class="col-xs-6">Nombre</div>
-            <div class="col-xs-2">Edad</div>
-            <div class="col-xs-4">
-                <button class="btn btn-danger pull-right">Eliminar</button>   
-            </div>
-        </div>         
+      <div class="row">
+        <div class="col-xs-6 txtName">Nombre</div>
+        <div class="col-xs-2 txtAge">Edad</div>
+        <div class="col-xs-4">
+          <button class="btn btn-danger pull-right btnDelete">Eliminar</button>
+        </div>
+      </div>
     </template>
-    
-</body>
-</html> 
+
+    <script src="app.js"></script>
+  </body>
+</html>
